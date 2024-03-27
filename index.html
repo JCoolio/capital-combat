@@ -12,13 +12,29 @@
   <title>Capital Combat</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <style>
-    .bg-image-full {
-      background-color: #cccccc; /* Used if the image is unavailable */
-      height: 800px; /* You must set a specified height */
-      background-position: center; /* Center the image */
-      background-repeat: no-repeat; /* Do not repeat the image */
-      background-size: cover; /* Resize the background image to cover the entire container */
+    /* Add this CSS to make the video overlay button transparent */
+   .video-overlay a.btn {
+    background-color: transparent;
+    border-color: transparent;
     }
+
+/* Add this CSS to make the background image responsive */
+    .bg-image-full {
+    background-color: #cccccc;
+    background-image: url('Sword__Shield.jpg');
+    height: 800px; /* Default height */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+/* Adjust the height for smaller screens */
+    @media (max-width: 768px) {
+    .bg-image-full {
+    height: 50vh; /* Adjust this value as needed */
+  }
+}
+
     .video-bg-container {
       position: relative;
       width: 100%;
