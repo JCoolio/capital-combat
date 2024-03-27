@@ -6,3 +6,17 @@
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-size: cover; /* Covers the entire area of the container, might crop the image */
   }
+  .video-overlay a.btn {
+    background-color: transparent;
+    border-color: transparent;
+  }
+  
+  /* Add this CSS to make the background image responsive */
+  .bg-image-full {
+    background-color: #cccccc;
+    background-image: url('Sword__Shield.jpg');
+    height: 100vh; /* Adjust the height for responsiveness */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
